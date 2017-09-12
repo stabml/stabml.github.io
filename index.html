@@ -2,12 +2,23 @@
 <html>
   <head>
   	<title>STAB Machine Learning Club</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <script src="p5.min.js"></script>
     <script src="addons/p5.dom.min.js"></script>
     <script src="addons/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
+
+    <!---
+    // Reserved for initialization of Firebase
+
+    -->
     <style> body {padding: 0; margin: 0;} </style>
   </head>
   <body>
+    <div id = "centralBox"> <!--- The content box located in center -->
+      <h1 id = "titleText">Sign up here!</h1>
+      <input id = "nameInput" type = "text" placeholder="Not ready for signing up yet"/>
+      <button id = "submit" disabled> Submit </button>
+    </div> 
   </body>
 </html>

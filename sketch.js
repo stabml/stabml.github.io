@@ -1,16 +1,17 @@
-// var ww = windowWidth;
-// var wh = windowHeight;
-
+var canvas;
 var a =200;
 var b =200;
 var t = 0;
 
 function setup (){
-  createCanvas(windowWidth,windowHeight);
+  canvas = createCanvas(windowWidth,windowHeight);
+  canvas.position(0,0);
+  canvas.style("z-index","-1");
   background("#aabbcc");
   a = width/2;
   b = height/2;
 }
+
 
 function draw(){
 
@@ -30,6 +31,13 @@ function draw(){
   }
   
   
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  background("#aabbcc");
+  a = width/2;
+  b = height/2;
 }
 
 
