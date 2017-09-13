@@ -12,7 +12,48 @@
 }
 
 #titleText{
-	margin-top:100px;
-	padding-top:100px;
+	margin-top:180px;
+	padding-top:20px;
 	color:white;
+}
+
+#nameInput{
+	width:200px;
+	font-size:20px;
+	background-color:white;
+	height:50px;
+	border-style:solid;
+	border-radius:10px;
+	border-width:3px;
+	border-color:#aabbcc;
+	margin-top:80px;
+	margin-bottom:15px;
+}
+
+#submit{
+	width:150px;
+	font-size:15px;
+	display:block;
+	border-radius:10px;
+	cursor:pointer;
+	color:white;
+	border:none;
+	margin:auto;
+	height:50px;
+	background-color:#aabbcc;
+}
+
+#submit:hover{
+	background-color:rgb(0,25,50);
+}
+
+#test{
+	display:block;
+	text-align:center;
+	margin-top:0px;
+	background-color:rgb(0,25,50);
+	color:white;
+	font-size:20px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
