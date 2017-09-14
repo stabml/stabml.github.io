@@ -45,11 +45,9 @@
           var newCV = snap.val()+1;
           originalCV.set(newCV);
           firebase.database().ref().child('members/'+newCV.toString()).set(submitValue);
-
+          alert("Welcome " + submitValue);
+          document.getElementById("nameInput").value = "";
         });
-
-
-        
 
       }
 
