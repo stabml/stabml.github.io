@@ -1,8 +1,14 @@
 # stabml.github.io
-A Website For STAB Machine Learning Club
 
-|     Name     |       E-mail       |
-|--------------|--------------------|
+This is a list of club members. If you are interested in Machine Learning, please make a pull request to update the list.
 
-| William Du | wdu@students.stab.org |
+|      Name     |     E-mail    |
+| ------------- |:-------------:|
+| William Du    | wdu@students.stab.org |
+| Johnny Lindbergh |  jlindbergh@students.stab.org     |
+| Thomas Castleman | tcastleman@students.stab.org      |
+| Yuelin Dang | ydang@students.stab.org |
+| Eddy Chen | echen21@students.stab.org |
+| Shawn Liu | sliu@students.stab.org |
 
+Welcome to the world of Machine Learning!
