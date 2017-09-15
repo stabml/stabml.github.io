@@ -36,10 +36,19 @@
 
       var saveRef = firebase.database().ref().child("students");
 
+      var name = document.getElementById("nameInput");
+
+      name.addEventListener("keydown",function(e){
+        if (e.keyCode == 13) {
+          alert("65");
+        }
+      });
+
       function submit(){
         var submitValue = document.getElementById("nameInput").value;
 
         var originalCV = firebase.database().ref().child('counter');
+
 
         originalCV.once('value').then(function(snap){
           var newCV = snap.val()+1;
@@ -65,5 +74,10 @@
       <input id = "nameInput" type = "text" placeholder="Your name goes in here"/>
       <button id = "submit" onclick="submit();"> Submit </button>
     </div> 
+
+    <div id = "contentBox">
+      <table>
+      </table>
+    </div>
   </body>
 </html>
