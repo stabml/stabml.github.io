@@ -37,6 +37,36 @@
       var saveRef = firebase.database().ref().child("students");
 
       var name = document.getElementById("nameInput");
+      
+
+      function signIn(){
+        var provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase.auth().languageCode = 'pt';
+
+
+        provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          var token = result.credential.accessToken;
+          // The signed-in user info.
+          var user = result.user;
+          // ...
+        }).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // The email of the user's account used.
+          var email = error.email;
+          // The firebase.auth.AuthCredential type that was used.
+          var credential = error.credential;
+          // ...
+        });
+
+      }
+
+
 
 
       function submit(){
@@ -68,6 +98,7 @@
       <h1 id = "titleText">Sign up here!</h1>
       <input id = "nameInput" type = "text" placeholder="Your name goes in here"/>
       <button id = "submit" onclick="submit();"> Submit </button>
+      <button id = "googleSign" onclick="signIn();"> Sign In</button>
     </div> 
 
   </body>
