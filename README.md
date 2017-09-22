@@ -13,4 +13,5 @@ Below is a list of club members. If you are interested in Machine Learning, plea
 | Eddy Chen | echen21@students.stab.org |
 | Shawn Liu | sliu@students.stab.org |
 | Reaggy Liu | rliu@students.stab.org |
+| Hewson Duffy | hduffy@students.stab.org |
 Welcome to the world of Machine Learning!
