@@ -50,7 +50,7 @@
           // The signed-in user info.
           var user = result.user;
 
-          alert('Welcome to the Machine Learning Club!'+ '\n' + "Hello: " user.displayName + "!" + '\n' + 'Your E-mail should be: '+ user.email);
+          alert('Welcome ' + user.displayName + "!" + '\n' + 'Your E-mail is: '+ user.email);
           console.log(user.val());
           console.log(user.displayName);
           // ...
@@ -99,7 +99,7 @@
       <h1 id = "titleText">Sign up here!</h1>
       <input id = "nameInput" type = "text" placeholder="Your name goes in here"/>
       <button id = "submit" onclick="submit();"> Submit </button>
-      <button id = "googleSign" onclick="signIn();">Sign up with Google</button>
+      <button id = "googleSign" onclick="signIn();"> Sign up with Google </button>
     </div> 
 
   </body>
